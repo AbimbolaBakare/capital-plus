@@ -1,15 +1,7 @@
 <template>
   <div>
-    <!-- START PRELOADER -->
-    <div id="preloader">
-      <div id="status">&nbsp;</div>
-    </div>
-    <!-- END PRELOADER -->
-    <!-- Return to Top -->
-    <a href="javascript:" id="return-to-top"
-      ><span class="fa fa-arrow-up" aria-hidden="true"></span></a>
-
-<!-- navigation -->
+<!-- NAVIGATION -->
+<particlesJS>
 <input type="checkbox" id="navcheck" role="button" title="menu" >
 <label for="navcheck" aria-hidden="true" title="menu" >
 	<span class="burger">
@@ -25,39 +17,43 @@
 	<a href="#" >ADMIN</a>
 	<a href="#" >CONTACT</a>
 </nav>
-    <!-- navigation -->
+    <!--NAVIGATION -->
 
-    <!-- intro header -->
-    <header class="intro">
-      <div class="intro-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <!-- start typer hello  -->
-              <div class="brand-heading">
-                <span
-                  class="txt-rotate"
-                  data-period="100"
-                  data-rotate='[ "Welcome to", "Capital", "Plus", "Limited" ]'
-                ></span>
-              </div>
-              <!-- end typer hello -->
-              <h2 class="intro-text">
-                AGRO ALLIED <br />
-                SUPPLIES AND RESOURCES
-              </h2>
-            </div>
-            <!-- end column wrapping -->
-          </div>
-          <!-- end row header -->
-        </div>
-        <!-- end container header -->
-      </div>
-      <!-- end intro body -->
-    </header>
-    <!-- end intro header -->
-    <!-- <div id="mouse-here"></div> -->
-    <!-- only for mouse to fall before the start of the section -->
-    <!-- start about me -->
+ <!-- action buttons -->
+ <div class="act">
+	<button class="mr-5 p-3 text-white" id="co">STAFF</button>
+	<button class="p-3 text-white" id="cod">ADMIN</button>
+</div>
+<!-- action buttons -->
+    
+</particlesJS>	
   </div>
 </template>
+
+<style scoped>
+	.act{
+		position: absolute;
+		top: 50%;
+		z-index: 1;		
+		left: 30%;
+	}
+	button{
+		box-shadow:20px 10px 50px  10px black;
+		width: 250px;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	button:hover{
+		font-size: 25px;
+	}
+	#co{
+		background-color: green;
+		border: 2px solid green;
+		border-radius: 10px;
+	}
+	#cod{
+		background-color: goldenrod;
+		border: 2px solid goldenrod;
+		border-radius: 10px;
+	}
+</style>
