@@ -3,13 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "start": "node server.js",
+    "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "aos": "^2.3.4",
     "core-js": "^3.6.4",
+    "express": "^4.17.1",
     "particles.js": "^2.0.0",
     "vee-validate": "^3.3.0",
     "vue": "^2.6.11",
