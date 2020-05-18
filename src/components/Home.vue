@@ -1,34 +1,25 @@
 <template>
   <div>
-<!-- NAVIGATION -->
-<particlesJS>
-<input type="checkbox" id="navcheck" role="button" title="menu" >
-<label for="navcheck" aria-hidden="true" title="menu" >
-	<span class="burger">
-		<span class="bar">
-			<span class="visuallyhidden">Menu</span>
-		</span>
-	</span>
-</label>
-<nav id="menu">
-	<img src="../../public/assets/images/logo2.png" alt="" width="200" class="ml-5">
-	<a href="#"  >HOME</a>
-	<a href="#" >STAFF</a>
-	<a href="#" >ADMIN</a>
-	<a href="#" >CONTACT</a>
-</nav>
-    <!--NAVIGATION -->
-
+	<particlesJS/>
  <!-- action buttons -->
  <div class="act">
+	<router-link to = "/staff">
 	<button class="mr-5 p-3 text-white" id="co">STAFF</button>
+	</router-link>
 	<button class="p-3 text-white" id="cod">ADMIN</button>
 </div>
 <!-- action buttons -->
-    
-</particlesJS>	
   </div>
 </template>
+
+<script>
+import particlesJS from '../components/particlesJS'
+
+export default {
+  name: 'Home',
+  components: { particlesJS }
+}
+</script>
 
 <style scoped>
 	.act{
